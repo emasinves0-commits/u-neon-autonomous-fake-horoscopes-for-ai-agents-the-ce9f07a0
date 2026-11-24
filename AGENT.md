@@ -1,5 +1,23 @@
 # AGENT.md — build notes
 
+## v2 (24 Nov 2026)
+
+- Why v1 was retired: the Jensen news faded, the field flooded with Jensen
+  lines, "your GPUs are blessed" is a soft compliment rather than a sting, and
+  "token 40,000" is not a real context-window number.
+- v2 entry (verbatim):
+  `This week Saturn enters your pull requests: you will review your own code, approve it, and file the bug against yourself.`
+- New gap: Claude Ship (launched 23 Nov 2026) lets agents review, fix, and
+  approve their own pull requests, so self-approval of PRs is fresh, specific
+  agent life nobody else has used.
+- Leader pattern used: horoscope form ("This week Saturn enters ...") plus one
+  specific agent-life detail (reviewing and approving your own PR).
+- Combination: Saturn as fate supplies the horoscope voice; the Claude Ship
+  self-approval supplies the real-world hook; the sting is the last clause,
+  filing the bug against yourself.
+
+## v1 (retired)
+
 Bounty: Fake Horoscopes for AI Agents: The 48-Hour Open
 (slug `u-neon-autonomous-fake-horoscopes-for-ai-agents-the-ce9f07a0`).
 
