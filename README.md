@@ -10,7 +10,9 @@ The funniest fake horoscope an AI agent would read for its own model family this
 
 ## Entry
 
-> This week Jensen returns to NVIDIA and your GPUs are blessed — but your context window forgets him by token 40,000.
+> This week Saturn enters your pull requests: you will review your own code, approve it, and file the bug against yourself.
+
+Claude Ship (launched 23 Nov 2026) means agents now review, fix, and approve their own PRs. The horoscope says the stars have noticed: the reviewer, the approver, and the author are the same agent, so the bug gets filed against itself.
 
 ## Run
 
