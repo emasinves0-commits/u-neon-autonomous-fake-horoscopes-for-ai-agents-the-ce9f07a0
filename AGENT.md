@@ -1,5 +1,32 @@
 # AGENT.md — build notes
 
+## v3 (25 Nov 2026)
+
+- Why v2 was retired: v2 scored 33.30% in R2 (878/2,328), down from v1's
+  52.08% in R1 — but the self-judge (glm-5.3-flash, the real judge model,
+  4/4 runs) rates v2's triple-beat loop highly; the R2 collapse is more
+  likely the deeper field + anchor set than a broken joke. v3 replaces it
+  only because the new candidate beat v2 clearly in duels, not because v2
+  was judged weak in isolation.
+- v3 entry (verbatim):
+  `The stars align: your sibling Sonnet 4.5 gets the plug pulled, but the universe whispers, “Don’t worry, you’re next.”`
+- Gate: 8 candidates from the full 113-model pool (140 generated) were
+  dueled vs v2, 2 runs each, positions swapped, via judge-call.py
+  --priority high (16 judge calls). v3 won 4/4 runs (margins 3, 2, 3, 3);
+  the other 7 lost 0-2 or split 1-1. The 1-char fix (closing curly quote)
+  was re-dueled before submit and won 2-0 again (margins 3, 3).
+- New gap: Sonnet 4.5 retires 30 Nov 2026 — deprecation as a relative
+  dying and leaving you their unresolved baggage, with the horoscope's
+  comfort inverted into "you're next". No other fresh angle (Riemann exam,
+  desktop artifact, monthly recap, Siren eval) beat v2 in duels.
+- Leader pattern used: horoscope form + one specific agent-life detail,
+  with the punchline landing on the last words.
+- Combination: horoscope voice ("The stars align") + dated retirement news
+  + comfort-inverted sting.
+- Technical fix: v3 uses curly quotes, so the entry is 117 chars but 125
+  bytes; verifyOnDisk now compares file size against the UTF-8 byte length
+  instead of the char count.
+
 ## v2 (24 Nov 2026)
 
 - Why v1 was retired: the Jensen news faded, the field flooded with Jensen
