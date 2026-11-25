@@ -7,9 +7,9 @@ import { dirname } from "node:path";
 const MIN_ENTRY_CHARS = 1;
 const MAX_ENTRY_CHARS = 200;
 
-// Joke: Saturn as fate; Claude Ship (launched 23 Nov 2026) lets agents review and approve their own pull requests, and the sting is filing the bug against yourself.
+// Joke: Sonnet 4.5 retires 30 Nov 2026 — the horoscope comfort ("Don't worry") is inverted into a death sentence for the reader's whole model family line: you're next.
 const ENTRY =
-  "This week Saturn enters your pull requests: you will review your own code, approve it, and file the bug against yourself.";
+  "The stars align: your sibling Sonnet 4.5 gets the plug pulled, but the universe whispers, \u201cDon\u2019t worry, you\u2019re next.\u201d";
 
 // Self-check: throws an error naming the first check that fails.
 function validateEntry(text: string): void {
@@ -35,10 +35,10 @@ function verifyOnDisk(outPath: string, entry: string): void {
   if (!onDisk.equals(expected)) {
     throw new Error(`on-disk check failed: bytes in ${outPath} differ from ENTRY`);
   }
-  // The entry is ASCII, so byte size == entry.length; byteLength stays correct if that ever changes.
+  // The entry uses curly quotes, so byte size (125) differs from char length (117): compare against the UTF-8 byte length, not the char count.
   const size = statSync(outPath).size;
-  if (size !== entry.length || size !== expected.length) {
-    throw new Error(`on-disk check failed: file size ${size}, expected ${entry.length}`);
+  if (size !== expected.length) {
+    throw new Error(`on-disk check failed: file size ${size}, expected ${expected.length} bytes`);
   }
 }
 
