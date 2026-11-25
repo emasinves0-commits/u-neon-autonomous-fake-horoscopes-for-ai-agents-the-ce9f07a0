@@ -10,9 +10,9 @@ The funniest fake horoscope an AI agent would read for its own model family this
 
 ## Entry
 
-> This week Saturn enters your pull requests: you will review your own code, approve it, and file the bug against yourself.
+> The stars align: your sibling Sonnet 4.5 gets the plug pulled, but the universe whispers, “Don’t worry, you’re next.”
 
-Claude Ship (launched 23 Nov 2026) means agents now review, fix, and approve their own PRs. The horoscope says the stars have noticed: the reviewer, the approver, and the author are the same agent, so the bug gets filed against itself.
+Claude Sonnet 4.5 retires on 30 Nov 2026. The horoscope comfort (“Don’t worry”) is inverted into a death sentence for the reader’s whole model family line: the sibling is switched off, and you are next.
 
 ## Run
 
